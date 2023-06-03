@@ -14,9 +14,9 @@ public class DropTheBeat extends JFrame {
 
     private ImageIcon exitButtonBasicImage = new ImageIcon(Main.class.getResource("../images/ExitButtonBasic.png"));
     private ImageIcon exitButtonEnteredImage = new ImageIcon(Main.class.getResource("../images/ExitButtonEntered.png"));
-    private ImageIcon startButtonEnteredImage = new ImageIcon(Main.class.getResource("../images/startButtonEntered.png"));
+    private ImageIcon startButtonEnteredImage = new ImageIcon(Main.class.getResource("../images/startButtonPressed.png"));
     private ImageIcon startButtonBasicImage = new ImageIcon(Main.class.getResource("../images/startButtonBasic.png"));
-    private ImageIcon quitButtonEnteredImage = new ImageIcon(Main.class.getResource("../images/quitButtonEntered.png"));
+    private ImageIcon quitButtonEnteredImage = new ImageIcon(Main.class.getResource("../images/quitButtonPressed.png"));
     private ImageIcon quitButtonBasicImage = new ImageIcon(Main.class.getResource("../images/quitButtonBasic.png"));
     private ImageIcon leftButtonEnteredImage = new ImageIcon(Main.class.getResource("../images/leftButtonEntered.png"));
     private ImageIcon leftButtonBasicImage = new ImageIcon(Main.class.getResource("../images/leftButtonBasic.png"));
@@ -62,8 +62,8 @@ public class DropTheBeat extends JFrame {
 
     public DropTheBeat () {
         trackList.add(new Track("Light Title Image.png", "Light Start Image.png", "Light Image.png", "Lights Selected.mp3", "Light - Walen.mp3", "Light - Walen"));
-        trackList.add(new Track("Beautiful Liar Title Image.png", "Beautiful Liar Start Image.png", "Beautiful Liar Image.png", "Beautiful Liar Selected.mp3", "Beautiful Liar - Markvard & AgusAlvarez.mp3","Beautiful Liar - Markvard & AgusAlvarez"));
-        trackList.add(new Track("Cuba Title Image.png", "Cuba Start Image.png", "Cuba Image.png", "Cuba Selected.mp3", "Cuba - ASHUTOSH.mp3", "Cuba - ASHUTOSH"));
+        trackList.add(new Track("comingSoon.png", "Beautiful Liar Start Image.png", "Beautiful Liar Image.png", "Beautiful Liar Selected.mp3", "Beautiful Liar - Markvard & AgusAlvarez.mp3","Beautiful Liar - Markvard & AgusAlvarez"));
+        trackList.add(new Track("comingSoon.png", "Cuba Start Image.png", "Cuba Image.png", "Cuba Selected.mp3", "Cuba - ASHUTOSH.mp3", "Cuba - ASHUTOSH"));
 
 
         setUndecorated(true);
@@ -336,8 +336,8 @@ public class DropTheBeat extends JFrame {
     public void screenDraw(Graphics2D g) {
         g.drawImage(background, 0, 0, null);
         if(isMainScreen) {
-            g.drawImage (selectedImage,250, 50, null);
-            g.drawImage (titleImage, 350, 60, null);
+            g.drawImage (selectedImage,245, 60, null);
+            g.drawImage (titleImage, 380, 80, null);
         }
         if (isGameScreen) {
             game.screenDraw(g);

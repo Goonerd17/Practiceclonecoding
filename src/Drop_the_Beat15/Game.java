@@ -214,7 +214,7 @@ public class Game extends Thread {
         Beat[] beats = null;
         if(titleName.equals("Light - Walen") && difficulty.equals("Easy")) {
             int startTime = 4460 - Main.REACH_TIME * 1000;
-            int gap = 125;
+            int gap = 120;
             beats = new Beat[] {
                     new Beat(startTime, "S"),
                     new Beat(startTime + gap * 5, "S"),
